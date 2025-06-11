@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Digitalcode-a</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="public/Digitalcode-a.png" alt="Digitalcode-a" class="logo-img">
+                    <span class="logo-text">Digitalcode-a</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Discutons de votre projet et concrétisons vos idées techniques</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Parlons de votre projet</h2>
+                    <p>Nous sommes à votre écoute pour transformer vos défis techniques en solutions innovantes. N'hésitez pas à nous contacter pour discuter de vos besoins.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Adresse</h4>
+                                <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Téléphone</h4>
+                                <p>+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>contact@digitalcode-a.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horaires</h4>
+                                <p>Lun - Ven: 9h00 - 18h00<br>Sam: 9h00 - 12h00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-contact">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <h3>Envoyez-nous un message</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nom complet</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Adresse email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Sujet</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionner un service</option>
+                                <option value="web-development">Développement Web</option>
+                                <option value="mobile-development">Applications Mobile</option>
+                                <option value="cloud-solutions">Solutions Cloud</option>
+                                <option value="consulting">Consulting IT</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Votre message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Envoyer le message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Envoi en cours...
+                            </span>
+                        </button>
+                        
+                        <div id="form-message" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Notre Emplacement</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2743934066463!2d2.295063815746486!3d48.87365970133202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8d%3A0x40b82c3688c9460!2sChamps-%C3%89lys%C3%A9es%2C%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1621234567890!5m2!1sen!2sus"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Digitalcode-a</h3>
+                    <p>Votre partenaire de confiance pour des solutions digitales innovantes et performantes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Développement Web</a></li>
+                        <li><a href="services.html">Applications Mobile</a></li>
+                        <li><a href="services.html">Solutions Cloud</a></li>
+                        <li><a href="services.html">Consulting IT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@digitalcode-a.fr</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Digitalcode-a. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

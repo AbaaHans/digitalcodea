@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Digitalcode-a</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="public/Digitalcode-a.png" alt="Digitalcode-a" class="logo-img">
+                    <span class="logo-text">Digitalcode-a</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Notre Portfolio</h1>
+            <p>Découvrez nos dernières réalisations techniques</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="api">API</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-full">
+        <div class="container">
+            <div class="portfolio-grid-full">
+                <div class="portfolio-item-full" data-category="web">
+                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plateforme E-commerce">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Développement Web</span>
+                            <h3>Plateforme E-commerce</h3>
+                            <p>Application web complète avec gestion des stocks, paiements et analytics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="mobile">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="App Mobile Banking">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Application Mobile</span>
+                            <h3>App Mobile Banking</h3>
+                            <p>Application bancaire sécurisée avec authentification biométrique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="cloud">
+                    <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Infrastructure Cloud">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Solutions Cloud</span>
+                            <h3>Infrastructure Cloud</h3>
+                            <p>Architecture microservices scalable sur AWS avec monitoring avancé</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="web">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dashboard Analytics">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Développement Web</span>
+                            <h3>Dashboard Analytics</h3>
+                            <p>Interface de visualisation de données en temps réel avec React et D3.js</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="api">
+                    <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600" alt="API Gateway">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">API Development</span>
+                            <h3>API Gateway</h3>
+                            <p>Passerelle API haute performance avec authentification et rate limiting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="mobile">
+                    <img src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=600" alt="App IoT">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Application Mobile</span>
+                            <h3>App IoT Control</h3>
+                            <p>Application de contrôle d'objets connectés avec interface intuitive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="web">
+                    <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SaaS Platform">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Développement Web</span>
+                            <h3>Plateforme SaaS</h3>
+                            <p>Solution multi-tenant avec gestion des abonnements et facturation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="cloud">
+                    <img src="https://images.pexels.com/photos/3183173/pexels-photo-3183173.jpeg?auto=compress&cs=tinysrgb&w=600" alt="DevOps Pipeline">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Solutions Cloud</span>
+                            <h3>Pipeline DevOps</h3>
+                            <p>Chaîne CI/CD automatisée avec déploiement multi-environnements</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-full" data-category="api">
+                    <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Microservices">
+                    <div class="portfolio-overlay-full">
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">API Development</span>
+                            <h3>Architecture Microservices</h3>
+                            <p>Écosystème de microservices avec communication asynchrone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Votre projet mérite la même excellence technique</h2>
+                <p>Discutons de la façon dont nous pouvons concrétiser vos idées</p>
+                <a href="contact.html" class="btn btn-white">Démarrer un projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Digitalcode-a</h3>
+                    <p>Votre partenaire de confiance pour des solutions digitales innovantes et performantes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Développement Web</a></li>
+                        <li><a href="services.html">Applications Mobile</a></li>
+                        <li><a href="services.html">Solutions Cloud</a></li>
+                        <li><a href="services.html">Consulting IT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@digitalcode-a.fr</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Digitalcode-a. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
