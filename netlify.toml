@@ -1,8 +1,24 @@
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/services"
   to = "/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
   to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/portfolio"
   to = "/portfolio.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
   to = "/contact.html"
   status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
