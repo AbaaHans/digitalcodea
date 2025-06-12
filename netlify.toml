@@ -1,4 +1,8 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  to = "/services.html"
+  to = "/about.html"
+  to = "/portfolio.html"
+  to = "/contact.html"
   status = 200
